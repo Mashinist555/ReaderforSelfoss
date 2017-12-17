@@ -11,6 +11,7 @@ fun String.toTextDrawableString(): String {
     for (s in this.split(" ".toRegex()).filter { !it.isEmpty() }.toTypedArray()) {
         textDrawable.append(s[0])
     }
+
     return textDrawable.toString()
 }
 
